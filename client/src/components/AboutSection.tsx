@@ -16,14 +16,10 @@ export default function AboutSection() {
               {resumeData.personal.profile}
             </p>
             
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6">
               <div className="bg-gray-50 p-6 rounded-lg shadow-inner-elegant">
                 <h4 className="font-semibold text-black mb-2">Experience</h4>
-                <p className="text-gray-600">3+ Years</p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg shadow-inner-elegant">
-                <h4 className="font-semibold text-black mb-2">Projects</h4>
-                <p className="text-gray-600">15+ Completed</p>
+                <p className="text-gray-600">3+ Years in Backend Development</p>
               </div>
             </div>
           </div>
