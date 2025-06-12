@@ -17,15 +17,15 @@ export default function ExperienceSection() {
             <div
               key={index}
               className={`relative flex flex-col md:flex-row items-start md:items-center mb-12 ${
-                index % 2 === 0 ? 'animate-fade-in-left' : 'animate-fade-in-right'
+                index % 2 === 0 ? 'animate-fade-in-right' : 'animate-fade-in-left'
               }`}
             >
               <div className="flex-shrink-0 w-8 h-8 bg-black rounded-full border-4 border-white shadow-lg absolute left-0 md:left-1/2 transform md:-translate-x-1/2 z-10"></div>
               
               <div className={`ml-12 md:ml-0 ${
                 index % 2 === 0 
-                  ? 'md:w-1/2 md:pr-8 md:text-right' 
-                  : 'md:w-1/2 md:pl-8'
+                  ? 'md:w-1/2 md:pl-8 md:ml-auto' 
+                  : 'md:w-1/2 md:pr-8 md:text-right'
               }`}>
                 <div className="bg-gray-50 p-6 rounded-xl shadow-elegant">
                   <h3 className="text-xl font-semibold text-black mb-2">
