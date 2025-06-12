@@ -13,7 +13,7 @@ export default function AboutSection() {
           <div className="animate-fade-in-left">
             <h3 className="text-2xl font-semibold text-black mb-6">Professional Profile</h3>
             <p className="text-lg leading-relaxed text-gray-600 mb-6">
-              {resumeData.personal.profile}
+              An Ex-Veterinarian turn web developer. I'm an active learner, good listener and team worker with a passion for backend development and system architecture.
             </p>
             
             <div className="grid grid-cols-1 gap-6">

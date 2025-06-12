@@ -8,7 +8,7 @@ export const resumeData = {
     location: "Bangkok, Thailand",
     github: "https://github.com/rujiwatpt",
     linkedin: "https://www.linkedin.com/in/rujiwatpt",
-    profile: "Web developer experienced in e-commerce platform and building integration. I'm an active learner, good listener and team worker with a passion for backend development and system architecture."
+    profile: "Backend-focused web developer experienced in e-commerce platform and building integration."
   },
   
   skills: {
