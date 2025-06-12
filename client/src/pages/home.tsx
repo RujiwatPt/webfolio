@@ -11,9 +11,9 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   const handleDownloadResume = () => {
     // Create a link to download the PDF resume
-    const link = document.createElement('a');
-    link.href = '/resume.pdf'; // This would be served from public folder
-    link.download = 'Rujiwat_Pithaksiripan_Resume.pdf';
+    const link = document.createElement("a");
+    link.href = "/resume.pdf"; // This would be served from public folder
+    link.download = "Rujiwat_Pithaksiripan_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      
+
       <main>
         <HeroSection />
         <AboutSection />
@@ -31,19 +31,19 @@ export default function Home() {
         <EducationSection />
         <ContactSection />
       </main>
-      
+
       {/* Footer */}
       <footer className="bg-black text-white py-8">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p className="text-gray-300">
-            © 2024 Rujiwat Pithaksiripan. All rights reserved.
+            © 2025 Rujiwat Pithaksiripan. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm mt-2">
             Built with passion for clean code and elegant design.
           </p>
         </div>
       </footer>
-      
+
       {/* Floating Download Button */}
       <div className="fixed bottom-8 right-8 z-50">
         <Button
