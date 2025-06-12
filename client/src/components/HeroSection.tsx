@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { resumeData } from '@/lib/resumeData';
+import profileImage from '@assets/1673412657098_1749705349784.jpeg';
 
 export default function HeroSection() {
   const scrollToContact = () => {
@@ -26,13 +27,13 @@ export default function HeroSection() {
       
       <div className="relative z-10 text-center text-white px-6 animate-fade-in-up">
         <div className="mb-8">
-          {/* Professional avatar placeholder with elegant shadow */}
-          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-gray-300 to-gray-500 shadow-elegant flex items-center justify-center mb-6">
-            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
-              <span className="text-2xl font-bold text-gray-700">
-                {resumeData.personal.name.charAt(0)}{resumeData.personal.surname.charAt(0)}
-              </span>
-            </div>
+          {/* Professional profile image */}
+          <div className="w-32 h-32 mx-auto rounded-full shadow-elegant mb-6 overflow-hidden border-4 border-white/20">
+            <img 
+              src={profileImage} 
+              alt={`${resumeData.personal.name} ${resumeData.personal.surname}`}
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
         
