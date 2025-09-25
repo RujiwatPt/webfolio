@@ -11,15 +11,17 @@ export default function AboutSection() {
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in-left">
-            <h3 className="text-2xl font-semibold text-black mb-6">Professional Profile</h3>
-            <p className="text-lg leading-relaxed text-gray-600 mb-6">
-              An Ex-Veterinarian turn web developer. I'm an active learner, good listener and team worker with a passion for backend development and system architecture.
-            </p>
-            
-            <div className="grid grid-cols-1 gap-6">
-              <div className="bg-gray-50 p-6 rounded-lg shadow-inner-elegant">
-                <h4 className="font-semibold text-black mb-2">Experience</h4>
-                <p className="text-gray-600">3+ Years in Backend Development</p>
+            <div className="bg-white p-8 rounded-2xl shadow-elegant">
+              <h3 className="text-2xl font-semibold text-black mb-6">Professional Profile</h3>
+              <p className="text-lg leading-relaxed text-gray-600 mb-6">
+                An Ex-Veterinarian turn web developer. I'm an active learner, good listener and team worker with a passion for backend development and system architecture.
+              </p>
+
+              <div className="grid grid-cols-1 gap-6">
+                <div className="bg-gray-50 p-6 rounded-lg shadow-inner-elegant">
+                  <h4 className="font-semibold text-black mb-2">Experience</h4>
+                  <p className="text-gray-600">3+ Years in Backend Development</p>
+                </div>
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ import { resumeData } from '@/lib/resumeData';
 
 export default function EducationSection() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="education" className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">Education & Learning</h2>

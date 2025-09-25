@@ -2,6 +2,7 @@ import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { resumeData } from '@/lib/resumeData';
 import profileImage from '@assets/1673412657098_1749705349784.jpeg';
+import HeroBackground from './HeroBackground';
 
 export default function HeroSection() {
   const scrollToContact = () => {
@@ -24,6 +25,7 @@ export default function HeroSection() {
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-gray-800"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+      <HeroBackground />
       
       <div className="relative z-10 text-center text-white px-6 animate-fade-in-up">
         <div className="mb-8">
