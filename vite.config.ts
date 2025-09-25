@@ -16,4 +16,7 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
   },
+  server: {
+    allowedHosts: ["webfolio-f8a3.onrender.com"],
+  },
 });
