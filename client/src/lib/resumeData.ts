@@ -2,14 +2,14 @@ export const resumeData = {
   personal: {
     name: "Rujiwat",
     surname: "Pithaksiripan",
-    title: "Backend Developer",
+    title: "Software Engineer",
     email: "rujiwatpt@gmail.com",
     phone: "089-527-4355",
     location: "Bangkok, Thailand",
     github: "https://github.com/rujiwatpt",
     linkedin: "https://www.linkedin.com/in/rujiwatpt",
     profile:
-      "Backend-focused web developer experienced in e-commerce platform and building integration.",
+      "Software engineer with a backend and e-commerce/integrations background, now building across the stack with applied AI/LLM, data science, and IoT projects.",
   },
 
   skills: {
@@ -17,10 +17,10 @@ export const resumeData = {
       "Node.js",
       "Express.js",
       "Nest.js",
-      "Koa.js",
-      "Hapi.js",
       "GraphQL",
+      "REST APIs",
       "Serverless framework",
+      "Python",
     ],
     database: [
       "PostgreSQL",
@@ -28,26 +28,38 @@ export const resumeData = {
       "MongoDB",
       "Supabase",
       "Prisma",
-      "Objection.js",
+      "SQLite",
     ],
     frontend: [
       "React.js",
-      "Bootstrap",
-      "Material-UI",
-      "jQuery",
-      "HTML5/CSS3",
-      "JavaScript",
+      "Next.js",
+      "Vite",
+      "TypeScript",
+      "Tailwind CSS",
+      "Three.js",
+    ],
+    aiAndData: [
+      "LLM integration",
+      "OpenAI API",
+      "pandas / NumPy",
+      "scikit-learn",
+      "CatBoost",
+      "OpenCV",
+    ],
+    iot: [
+      "Arduino (UNO Q / Nano 33)",
+      "Web Serial",
+      "BLE",
+      "Signal processing (FFT)",
+      "NeuroSky EEG",
     ],
     tools: [
       "Git/GitHub",
+      "Docker",
+      "AWS",
       "Jest",
       "Playwright",
-      "Jira",
-      "Atlassian",
-      "Slack",
-      "Gather",
-      "Linear",
-      "Notion",
+      "Jira / Linear",
     ],
   },
 
@@ -57,8 +69,9 @@ export const resumeData = {
       company: "Hubql",
       duration: "May 2025 - Present",
       responsibilities: [
-        "Developed a social media lead scraping module for a smart campaign management system.",
-        "Built an automated interaction module leveraging large language models (LLMs) to engage and respond to leads.",
+        "Building backend services for an AI-assisted campaign management platform (Node.js, TypeScript, serverless).",
+        "Integrating large language models (LLMs) into automated lead-engagement workflows.",
+        "Built the front-end 3D model viewer for a 3D/BIM collaboration platform using React and Three.js (react-three-fiber / drei).",
       ],
     },
     {
@@ -89,6 +102,23 @@ export const resumeData = {
         "Develop dashboard, subscription and payment page for web application",
         "Develop RESTful API for web application",
       ],
+    },
+  ],
+
+  projects: [
+    {
+      name: "EEG + Posture Wellness Dashboard",
+      type: "Team Hackathon",
+      description:
+        "Real-time wellness dashboard on a NeuroSky TGAM EEG sensor and an Arduino UNO Q. A Web Serial bridge streams raw EEG to a Python backend that runs FFT band analysis, blink detection, and KNN posture classification, with SQLite persistence and a 20-20-20 eye-rest timer.",
+      stack: ["Python", "Web Serial", "Arduino UNO Q", "BLE", "NumPy / FFT", "SQLite"],
+    },
+    {
+      name: "Time-Series Demand Forecasting",
+      type: "Team Hackathon",
+      description:
+        "Multi-step sales/demand forecasting pipeline using gradient-boosted trees with recursive and 2-step strategies, feature engineering, and backtesting.",
+      stack: ["Python", "CatBoost", "pandas", "scikit-learn", "statsmodels"],
     },
   ],
 

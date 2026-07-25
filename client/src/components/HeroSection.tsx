@@ -1,7 +1,7 @@
 import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { resumeData } from '@/lib/resumeData';
-import profileImage from '@assets/1673412657098_1749705349784.jpeg';
+import profileImage from '@assets/profile.jpg';
 import HeroBackground from './HeroBackground';
 
 export default function HeroSection() {
