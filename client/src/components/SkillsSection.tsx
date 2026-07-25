@@ -1,4 +1,4 @@
-import { Server, Database, Monitor, Settings } from 'lucide-react';
+import { Server, Database, Monitor, Settings, Brain, Cpu } from 'lucide-react';
 import { resumeData } from '@/lib/resumeData';
 
 export default function SkillsSection() {
@@ -19,7 +19,17 @@ export default function SkillsSection() {
       skills: resumeData.skills.frontend,
     },
     {
-      title: 'Tools & Testing',
+      title: 'AI & Data',
+      icon: Brain,
+      skills: resumeData.skills.aiAndData,
+    },
+    {
+      title: 'IoT & Hardware',
+      icon: Cpu,
+      skills: resumeData.skills.iot,
+    },
+    {
+      title: 'Tools & Cloud',
       icon: Settings,
       skills: resumeData.skills.tools,
     },
@@ -32,11 +42,11 @@ export default function SkillsSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">Technical Skills</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-black to-gray-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Specialized in backend development with expertise in modern frameworks and databases
+            Full-stack engineering with a backend core, plus applied AI/data and IoT
           </p>
         </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => {
             const IconComponent = category.icon;
             return (
