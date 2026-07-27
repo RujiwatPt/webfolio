@@ -141,6 +141,16 @@ export const resumeData = {
 
   learning: [
     {
+      title: "Super AI Engineer Season 6",
+      instructor: "",
+      platform: "AIS Academy",
+    },
+    {
+      title: "42 Bangkok",
+      instructor: "",
+      platform: "42 Network",
+    },
+    {
       title: "The Complete 2021 Web Development Bootcamp",
       instructor: "Dr. Angela Yu",
       platform: "Udemy",

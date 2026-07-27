@@ -43,7 +43,9 @@ export default function EducationSection() {
                 <div key={index}>
                   <h4 className="font-semibold mb-2">{course.title}</h4>
                   <p className="text-gray-300 text-sm">
-                    By {course.instructor} • {course.platform}
+                    {[course.instructor && `By ${course.instructor}`, course.platform]
+                      .filter(Boolean)
+                      .join(' • ')}
                   </p>
                 </div>
               ))}
