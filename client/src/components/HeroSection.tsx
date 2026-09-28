@@ -22,10 +22,12 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-gray-800"></div>
-      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-      <HeroBackground />
+    <section id="home" className="relative flex min-h-screen items-center justify-center pt-24 pb-20">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-gray-800"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+        <HeroBackground />
+      </div>
       
       <div className="relative z-10 text-center text-white px-6 animate-fade-in-up">
         <div className="mb-8">
