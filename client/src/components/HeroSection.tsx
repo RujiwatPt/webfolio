@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, Mail, ChevronDown, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { resumeData } from '@/lib/resumeData';
 import profileImage from '@assets/profile.jpg';
@@ -90,10 +90,23 @@ export default function HeroSection() {
           </a>
           <a
             href={`mailto:${resumeData.personal.email}`}
+            aria-label="Email"
             className="text-gray-300 hover:text-white transform hover:scale-110 transition-all duration-300"
           >
             <Mail className="w-8 h-8" />
           </a>
+          {resumeData.personal.studio && (
+            <a
+              href={resumeData.personal.studio}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Studio"
+              title="Howling Heaven Studio"
+              className="text-gray-300 hover:text-white transform hover:scale-110 transition-all duration-300"
+            >
+              <Globe className="w-8 h-8" />
+            </a>
+          )}
         </div>
       </div>
       

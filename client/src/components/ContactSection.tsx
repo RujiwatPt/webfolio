@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Globe } from 'lucide-react';
 import { resumeData } from '@/lib/resumeData';
 
 export default function ContactSection() {
@@ -72,10 +72,23 @@ export default function ContactSection() {
           </a>
           <a
             href={`mailto:${resumeData.personal.email}`}
+            aria-label="Email"
             className="w-12 h-12 bg-gradient-to-br from-black to-gray-600 rounded-full flex items-center justify-center text-white hover:scale-110 transform transition-all duration-300 shadow-elegant"
           >
             <Mail className="w-6 h-6" />
           </a>
+          {resumeData.personal.studio && (
+            <a
+              href={resumeData.personal.studio}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Studio"
+              title="Howling Heaven Studio"
+              className="w-12 h-12 bg-gradient-to-br from-black to-gray-600 rounded-full flex items-center justify-center text-white hover:scale-110 transform transition-all duration-300 shadow-elegant"
+            >
+              <Globe className="w-6 h-6" />
+            </a>
+          )}
         </div>
       </div>
     </section>

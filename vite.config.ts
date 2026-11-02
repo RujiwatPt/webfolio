@@ -17,6 +17,9 @@ export default defineConfig({
     emptyOutDir: true,
   },
   server: {
-    allowedHosts: ["webfolio-f8a3.onrender.com"],
+    allowedHosts: [
+      "webfolio.howlingheaven.com",
+      "studio.howlingheaven.com",
+    ],
   },
 });

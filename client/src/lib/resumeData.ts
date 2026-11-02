@@ -8,6 +8,8 @@ export const resumeData = {
     location: "Bangkok, Thailand",
     github: "https://github.com/rujiwatpt",
     linkedin: "https://www.linkedin.com/in/rujiwatpt",
+    portfolio: "https://webfolio.howlingheaven.com/",
+    studio: "https://studio.howlingheaven.com/",
     profile:
       "Software engineer with a backend and e-commerce/integrations background, now building across the stack with applied AI/LLM, data science, and IoT projects.",
   },
@@ -107,6 +109,14 @@ export const resumeData = {
 
   projects: [
     {
+      name: "Howling Heaven Studio",
+      type: "Creative Studio",
+      url: "https://studio.howlingheaven.com/",
+      description:
+        "Digital and creative studio portfolio featuring interactive 3D celestial canvas experiences, service showcases, and custom web products.",
+      stack: ["Next.js", "React", "Three.js", "Tailwind CSS"],
+    },
+    {
       name: "EEG + Posture Wellness Dashboard",
       type: "Team Hackathon",
       description:
@@ -143,7 +153,7 @@ export const resumeData = {
     {
       title: "Super AI Engineer Season 6",
       instructor: "",
-      platform: "AIS Academy",
+      platform: "AIAT",
     },
     {
       title: "42 Bangkok",

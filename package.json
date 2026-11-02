@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
-  "homepage": "https://rujiwatpt.github.io/webfolio",
+  "homepage": "https://webfolio.howlingheaven.com/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
